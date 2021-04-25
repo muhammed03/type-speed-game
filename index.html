@@ -17,6 +17,9 @@
     <button id="settings-btn" class="settings-btn">
       <i class="fas fa-cog"></i>
     </button>
+    <button id="results-btn" class="results-btn">
+      <i class="fas fa-medal"></i>
+    </button>
 
     <div id="settings" class="settings">
       <form id="settings-form">
@@ -40,6 +43,7 @@
         id="text"
         type="text"
         autocomplete="off"
+        autofocus="false"
         placeholder="Type the word here..."
       />
 
@@ -47,6 +51,24 @@
       <p class="score-container">Score: <span id="score">0</span></p>
 
       <div id="end-game-container" class="end-game-container"></div>
+    </div>
+
+    <div class="popup-container">
+      <div class="inner-popup">
+        <button class="close-popup-btn" id="close-btn">X</button>
+        <h1 class="scores">Best Scores</h1>
+        <div class="results-container">
+          <div class="easy" id="easy">
+            <div>Easy</div>
+          </div>
+          <div class="medium" id="medium">
+            <div>Medium</div>
+          </div>
+          <div class="hard" id="hard">
+            <div>Hard</div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script src="script.js"></script>
